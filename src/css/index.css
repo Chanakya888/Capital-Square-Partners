@@ -1,0 +1,22 @@
+@font-face {
+  font-family: SchynderCondensed;
+  src: local("Schynder"), url(../../assets/SchnyderM.otf);
+  -webkit-font-smoothing: antialiased;
+}
+@font-face {
+  font-family: NeueMontreal;
+  src: local("NeueMontreal"), url(../../assets/NeueMontreal-Regular.otf);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-family: SchynderCondensed;
+  font-size: 4rem;
+  line-height: 4rem;
+}
+p {
+  font-family: NeueMontreal;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  opacity: 0.25;
+}

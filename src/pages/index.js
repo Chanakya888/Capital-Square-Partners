@@ -1,3 +1,13 @@
 import React from "react"
-
-export default () => <div className="text-indigo-900">Hello world!</div>
+import Layout from "../Components/Layout"
+import "../css/index.css"
+import MainSection from "../Components/MainSection"
+import MainSectionPicture from "../../assets/main-section.png"
+export default () => (
+  <div>
+    <Layout />
+    <div className="pt-16">
+      <MainSection />
+    </div>
+  </div>
+)
