@@ -8,15 +8,41 @@
   src: local("NeueMontreal"), url(../../assets/NeueMontreal-Regular.otf);
   -webkit-font-smoothing: antialiased;
 }
-
+@font-face {
+  font-family: NeueMontreal;
+  src: local("NeueMontreal"), url(../../assets/NeueMontreal-Bold.otf);
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+:root {
+  --text-color: white;
+}
 h1 {
   font-family: SchynderCondensed;
-  font-size: 4rem;
-  line-height: 4rem;
+}
+h2 {
+  font-family: SchynderCondensed;
+  @apply text-4xl leading-h2LineHeight;
+}
+h3 {
+  font-family: NeueMontreal;
+  font-weight: bold;
+}
+h4 {
+  font-family: NeueMontreal;
+  opacity: 0.6;
 }
 p {
   font-family: NeueMontreal;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  opacity: 0.25;
+  @apply text-xl leading-7 opacity-25;
+}
+.heightofbox {
+  height: 336px;
+}
+.accordionContent {
+  max-height: 0;
+  overflow: hidden;
+}
+.accordion {
+  cursor: pointer;
 }
