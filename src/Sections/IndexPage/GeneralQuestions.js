@@ -13,7 +13,8 @@ const GeneralQuestions = () => {
         </p>
       </div>
       <div className="mt-16">
-        <AccordionContent
+        <AccordionContent />
+        {/* <AccordionContent
           question="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor."
           answer="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -33,7 +34,7 @@ const GeneralQuestions = () => {
           answer="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor."
-        />
+        /> */}
       </div>
     </div>
   )

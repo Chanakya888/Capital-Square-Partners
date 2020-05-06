@@ -7,24 +7,23 @@ import LeftArrow from "../../../assets/LeftArrow.jpg"
 
 const TeamAtCsp = () => {
   let x = 0
-  let count = ["q1", "q2", "q3"]
-  console.log(count)
-  console.log(count[1])
+  let countarr1 = ["q1", "q2", "q3"]
+  const countArr1Length = countarr1.length
   const handleIncrement = () => {
-    document.getElementById(count[x]).style.display = "none"
-    if (x === 2) {
+    document.getElementById(countarr1[x]).style.display = "none"
+    if (x === countArr1Length - 1) {
       x = -1
     }
     x = x + 1
-    document.getElementById(count[x]).style.display = "block"
+    document.getElementById(countarr1[x]).style.display = "block"
   }
   const handleDecrement = () => {
-    document.getElementById(count[x]).style.display = "none"
+    document.getElementById(countarr1[x]).style.display = "none"
     if (x === 0) {
-      x = 3
+      x = countArr1Length
     }
     x = x - 1
-    document.getElementById(count[x]).style.display = "block"
+    document.getElementById(countarr1[x]).style.display = "block"
   }
   return (
     <div className="mt-32 px-5">
@@ -62,21 +61,20 @@ const TeamAtCsp = () => {
         <div className="mt-8 w-full h-1 rounded-full bg-blue-900"></div>
 
         <div className="mt-8 flex justify-start">
-          <img
-            src={LeftArrow}
-            alt=""
+          <button
             onClick={() => {
               handleDecrement()
             }}
-          />
-          <img
-            src={RightArrow}
-            className="ml-2"
-            alt=""
+          >
+            <img src={LeftArrow} alt="" />
+          </button>
+          <button
             onClick={() => {
               handleIncrement()
             }}
-          />
+          >
+            <img src={RightArrow} className="ml-2" alt="" />
+          </button>
         </div>
       </div>
     </div>

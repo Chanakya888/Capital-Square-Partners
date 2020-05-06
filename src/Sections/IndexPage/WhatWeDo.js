@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import SubHeading from "../../Components/SubHeading"
 import ButtonComponent from "../../Components/ButtonComponent"
 import AchievementSquare from "../../Components/AchievementSquare"
@@ -67,21 +67,20 @@ const WhatWeDo = () => {
       <div className="mt-8 w-full h-1 rounded-full bg-blue-900"></div>
       <div className="flex justify-between">
         <div className="mt-8 flex justify-start">
-          <img
-            src={LeftArrow}
-            alt=""
+          <button
             onClick={() => {
               handleDecrement()
             }}
-          />
-          <img
-            src={RightArrow}
-            className="ml-2"
-            alt=""
+          >
+            <img src={LeftArrow} alt="" />
+          </button>
+          <button
             onClick={() => {
               handleIncrement()
             }}
-          />
+          >
+            <img src={RightArrow} className="ml-2" alt="" />
+          </button>
         </div>
         <div className="text-tiny uppercase mt-8 flex items-center text-blue-900 tracking-morewider">
           Expand +
