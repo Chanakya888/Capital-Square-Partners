@@ -1,12 +1,25 @@
 import React from "react"
+import { graphql, useStaticQuery } from "gatsby"
+import Img from "gatsby-image"
 import ButtonComponent from "../../Components/ButtonComponent"
-import MainSectionPicture from "../../../assets/main-section.png"
 
 const MainSection = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "main-section.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 2000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+  console.log(data)
   return (
     <div>
-      <div className="px-5 pt-24">
-        <h1 className="text-6xl leading-h1LineHeight">
+      <div className="pt-24 px-5 sm:px-10">
+        <h1 className="text-6xl leading-h1LineHeight sm:w-4/5 ">
           Equity investment for serious businesses and investors alike.
         </h1>
         <ButtonComponent
@@ -16,10 +29,15 @@ const MainSection = () => {
         />
       </div>
       <div className="pt-32">
-        <img src={MainSectionPicture} alt="Main section" />
+        <Img
+          fluid={data.file.childImageSharp.fluid}
+          alt="this is the people walking"
+        ></Img>
       </div>
     </div>
   )
 }
 
 export default MainSection
+
+// export const query =

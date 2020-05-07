@@ -1,10 +1,10 @@
 import React from "react"
 import SubHeading from "../../Components/SubHeading"
-import AccordionContent from "./AccordionContent"
+import AccordionComponent from "../../Components/AccordionComponent"
 
 const GeneralQuestions = () => {
   return (
-    <div className="mt-32 px-5">
+    <div className="mt-32">
       <SubHeading number="05" title="general questions" />
       <div className="mt-20 flex justify-between">
         <p className="w-11/12">
@@ -13,28 +13,27 @@ const GeneralQuestions = () => {
         </p>
       </div>
       <div className="mt-16">
-        <AccordionContent />
-        {/* <AccordionContent
+        <AccordionComponent
           question="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor."
           answer="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor."
         />
-        <AccordionContent
+        <AccordionComponent
           question="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor."
           answer="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor."
         />
-        <AccordionContent
+        <AccordionComponent
           question="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor."
           answer="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor."
-        /> */}
+        />
       </div>
     </div>
   )

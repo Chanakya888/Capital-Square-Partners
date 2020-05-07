@@ -1,6 +1,6 @@
 import React from "react"
-import Logo from "../../assets/Logo.png"
-import Threedot from "../../assets/Threedot.png"
+import Logo from "../assets/Logo.png"
+import Threedot from "../assets/Threedot.png"
 import ProgressBar from "./ProgressBar"
 const Header = () => {
   return (

@@ -2,8 +2,8 @@ import React from "react"
 import SubHeading from "../../Components/SubHeading"
 import ButtonComponent from "../../Components/ButtonComponent"
 import AchievementSquare from "../../Components/AchievementSquare"
-import RightArrow from "../../../assets/RightArrow.jpg"
-import LeftArrow from "../../../assets/LeftArrow.jpg"
+import RightArrow from "../../assets/RightArrow.jpg"
+import LeftArrow from "../../assets/LeftArrow.jpg"
 
 const WhatWeDo = () => {
   let x = 0
@@ -26,7 +26,7 @@ const WhatWeDo = () => {
     document.getElementById(count[x]).style.display = "block"
   }
   return (
-    <div className="pt-32 px-5">
+    <div className="pt-32">
       <SubHeading number="03" title="What we do" color="black" />
       <h2 className="pt-16 ">
         We invest in companies we believe in, which operate in markets we

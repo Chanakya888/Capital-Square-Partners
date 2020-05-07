@@ -2,8 +2,8 @@ import React from "react"
 import SubHeading from "../../Components/SubHeading"
 import ButtonComponent from "../../Components/ButtonComponent"
 import InvestBanner from "../../Components/InvestBanner"
-import RightArrow from "../../../assets/RightArrow.jpg"
-import LeftArrow from "../../../assets/LeftArrow.jpg"
+import RightArrow from "../../assets/RightArrow.jpg"
+import LeftArrow from "../../assets/LeftArrow.jpg"
 
 const TeamAtCsp = () => {
   let x = 0
@@ -26,7 +26,7 @@ const TeamAtCsp = () => {
     document.getElementById(countarr1[x]).style.display = "block"
   }
   return (
-    <div className="mt-32 px-5">
+    <div className="mt-32">
       <SubHeading number="04" title="tram at csp" color="black" />
       <h2 className="pt-16">
         Sed ut perspiciatis unde omnis iste natus error sit voluptatem

@@ -20,5 +20,14 @@ module.exports = {
         tailwind: true,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `Images`,
+        path: `${__dirname}/src/Images`,
+      },
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
   ],
 }

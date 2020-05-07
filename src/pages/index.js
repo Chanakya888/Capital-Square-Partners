@@ -12,12 +12,18 @@ export default () => (
   <div>
     <Layout />
     <div className="pt-16">
+      {/* Padding has to be changed inside the component for Main section because of the Picture */}
       <MainSection />
-      <WhoWeAreSection />
+      <div className="px-5 sm:px-10">
+        <WhoWeAreSection />
+      </div>
+      {/* Padding has to be changed inside the component for recent investments because of the dark background  */}
       <RecentInvestments />
-      <WhatWeDo />
-      <TeamAtCsp />
-      <GeneralQuestions />
+      <div className="px-5 sm:px-10">
+        <WhatWeDo />
+        <TeamAtCsp />
+        <GeneralQuestions />
+      </div>
     </div>
   </div>
 )

@@ -11,7 +11,7 @@ const AchievementSquare = props => {
       <h1 className="text-white text-6xl absolute pl-8 pt-24 left-0 top-0">
         {props.achievement}
       </h1>
-      <div className="absolute opacity-50 text-base w-11/12 bottom-0 pb-8 pl-8 text-white ">
+      <div className="absolute opacity-50 text-base w-11/12 bottom-0 pb-8 pl-8 text-white sm:w-3/4">
         {props.paragraph}
       </div>
     </div>

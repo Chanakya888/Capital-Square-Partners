@@ -1,16 +1,16 @@
 @font-face {
   font-family: SchynderCondensed;
-  src: local("Schynder"), url(../../assets/SchnyderM.otf);
+  src: local("Schynder"), url(../assets/SchnyderM.otf);
   -webkit-font-smoothing: antialiased;
 }
 @font-face {
   font-family: NeueMontreal;
-  src: local("NeueMontreal"), url(../../assets/NeueMontreal-Regular.otf);
+  src: local("NeueMontreal"), url(../assets/NeueMontreal-Regular.otf);
   -webkit-font-smoothing: antialiased;
 }
 @font-face {
   font-family: NeueMontreal;
-  src: local("NeueMontreal"), url(../../assets/NeueMontreal-Bold.otf);
+  src: local("NeueMontreal"), url(../assets/NeueMontreal-Bold.otf);
   font-weight: bold;
   -webkit-font-smoothing: antialiased;
 }
@@ -22,7 +22,8 @@ h1 {
 }
 h2 {
   font-family: SchynderCondensed;
-  @apply text-4xl leading-h2LineHeight;
+  @apply text-4xl;
+  @apply leading-10;
 }
 h3 {
   font-family: NeueMontreal;
@@ -34,7 +35,9 @@ h4 {
 }
 p {
   font-family: NeueMontreal;
-  @apply text-xl leading-7 opacity-25;
+  @apply text-xl;
+  @apply opacity-25;
+  @apply leading-7;
 }
 .heightofbox {
   height: 336px;
@@ -45,4 +48,9 @@ p {
 }
 .accordion {
   cursor: pointer;
+}
+@media only screen and (min-width: 640px) {
+  p {
+    @apply w-3/4;
+  }
 }
