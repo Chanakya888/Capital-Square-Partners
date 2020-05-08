@@ -33,7 +33,7 @@ const WhatWeDo = () => {
         understand in depth, and are either already segment leaders or can
         achieve leadership with further capital and operational support.
       </h2>
-      <p className="pt-16">
+      <p className="pt-16 ">
         We typically like to own the businesses in which we invest or have a
         substantial position, either by ourselves or as part of an investor
         consortium. Our investment focus is on businesses that are preferably

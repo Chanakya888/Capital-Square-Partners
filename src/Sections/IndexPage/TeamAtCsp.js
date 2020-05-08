@@ -32,6 +32,7 @@ const TeamAtCsp = () => {
         Sed ut perspiciatis unde omnis iste natus error sit voluptatem
         accusantium doloremque
       </h2>
+
       <ButtonComponent title="meet the entire team" color="black" />
       <div className="mt-20">
         <div id="q1">
